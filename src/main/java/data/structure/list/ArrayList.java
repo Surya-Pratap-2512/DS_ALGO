@@ -52,7 +52,7 @@ public class ArrayList<T> {
 
     public int indexOf(T obj) {
         for (int i = 0; i < size(); i++) {
-            if (list[i] == obj) {
+            if (list[i].equals(obj)) {
                 return i;
             }
         }

@@ -72,7 +72,7 @@ public class LinkedList<T> {
         }
         int count = 0;
         Node<T> temp = head;
-        while (temp != null && temp.data != data) {
+        while (temp != null && !temp.data.equals(data)) {
             temp = temp.next;
             count++;
         }
